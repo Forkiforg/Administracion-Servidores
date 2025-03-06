@@ -1,0 +1,15 @@
+El script conectate2 tiene como función conectarse a una red wifi sea del tipo que sea (abierta privada o mediante la web)
+
+En el inicio del script saludamos al usuario quien lo esta ejecutando, después de esto preguntaremos si gusta ver sus interfaces de red, esto es para iniciar con el procedimiento ya que primero debemos de saber el nombre que estas tienen.
+Las respuestas del usuario se leen mediante read.
+Despues de esto se usa if para preguntarle si desea cambiar el estado de las interfaces (UP A DOWN y viceversa). 
+
+ADICIONAL //Si en esta pregunta o en la anterior responde que no entonces se cierra el programa ya que estaria cortando el proceso al inicio, por lo cual se intuye que no lo necesita.
+
+El usuario debe de darnos el nombre de la interfaz (dependiendo cual vamos a conectar a internet).
+Con este nombre pondremos en UP o DOWN la intefaz dependiendo lo que se pida. Si se pide UP entonces preguntaremos que tipo de red desea (Inalambrica o Alambrica)
+
+Si es ALAMBRICA nos conectaremos a la red y le generaremos una ip dinamica
+
+Si es INALAMBRICA primero comenzaremos a hacer un SCAN de redes de alrededor, cuando se encuentre la red deseada pediremos su nombre de la red (ESSID) y contraseña, en caso de ser una red publica la contraseña se puede omitir puesto que no es necesario, despues de ser conectados se generara una ip dinamica para esta red.
+
